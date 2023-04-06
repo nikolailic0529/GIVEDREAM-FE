@@ -1,0 +1,81 @@
+@import "./fonts/stylesheet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --text-color: white;
+  --bg-color: #030118;
+  --dark-blue: #021230;
+  --border-color: #666;
+  --table-border-color: #61606e;
+  --secondary-text-color: #babcd2;
+  --pink-color: #f95acc;
+  --purple-color: #713DFF;
+}
+
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  /* identical to box height, or 126% */
+  letter-spacing: -0.02em;
+}
+
+.text-secondary-text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}

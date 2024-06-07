@@ -7,16 +7,16 @@ const cards = [
     },
 
     {
-        title: "Account protection",
-        text: "The smart contract code is open, no one can make changes to the code, the system works autonomously and transparently, there are no hidden fees and blackdoors",
+        title: "Additional rewards",
+        text: "Get additional rewards in btcb wrapped bitcoin due to the annual percentage return from farming and staking on different blockchains, where are all the liquidity received on the first account sent to",
     },
     {
         title: "Growth of rewards",
         text: "By making contributions to the system from 0.01 to 5242.88 bnb, you get a place in the bsc blockchain and the smart contract gives you rewards of more than 25 000 bnb when you automatically fill in the binary structure below",
     },
     {
-        title: "Additional rewards",
-        text: "Get additional rewards in btcb wrapped bitcoin due to the annual percentage return from farming and staking on different blockchains, where are all the liquidity received on the first account sent to",
+        title: "Account protection",
+        text: "The smart contract code is open, no one can make changes to the code, the system works autonomously and transparently, there are no hidden fees ",
     },
 ];
 

@@ -81,7 +81,7 @@ const navItems = [
     },
     {
         name: "Instructions",
-        dropdown: true,
+        path:"/Instructions",
     },
 ];
 
@@ -93,8 +93,8 @@ const Header = () => {
             <div className="mx-auto p-6">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-12">
-                        <Link href="/" className="hover:opacity-50 ease-linear duration-150">
-                            <img src='/images/logo.svg' alt=""/>
+                        <Link href="/" className="text-white text-xl hover:opacity-50 ease-linear duration-150">
+                            GIVEDREAM
                         </Link>
 
                         <nav className="lg:block hidden">
@@ -205,10 +205,10 @@ const Header = () => {
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
-                            className="hover:opacity-50 ease-linear duration-150 -m-1.5 p-1.5"
+                            className="text-white text-xl hover:opacity-50 ease-linear duration-150 -m-1.5 p-1.5"
                         >
                             <span className="sr-only">Your Company</span>
-                            <img src="/images/logo.svg" alt=""/>
+                            GIVEDREAM
                         </Link>
                         <button
                             type="button"

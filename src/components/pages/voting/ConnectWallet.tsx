@@ -134,7 +134,7 @@ export const MobileConnectWallet = ()=>{
                     <>
                         <div className="mt-12 w-full">
                             <Disclosure.Button as={StyledCollectWallet} className="w-full">
-                                Collect wallet
+                                Connect wallet
                             </Disclosure.Button>
                         </div>
                         <Disclosure.Panel className="mt-2 space-y-2">

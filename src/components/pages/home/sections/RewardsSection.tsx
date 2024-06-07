@@ -60,7 +60,7 @@ const RewardsSection = ()=>{
                 </p>
 
                 <p className="text-secondary-text">
-                    You automatically receive income every week and can withdraw it to your wallet at any time
+                  Participation in the project will not only allow you to receive rewards, but also give you the opportunity to extend mercy by helping community members and their pets in hardships, as well as Support Funds around the World!
                 </p>
 
                 <LearnMoreButton />

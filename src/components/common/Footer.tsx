@@ -145,7 +145,7 @@ export default function Footer() {
             <div className="w-full py-5 border-t border-border bg-transparent">
                 <div className="container">
                     <StyleBottomText>
-                        © 2023 dao-dream.com. All rights reserved.
+                        © 2023 givedream.io. All rights reserved.
                     </StyleBottomText>
                 </div>
             </div>

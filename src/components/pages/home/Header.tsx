@@ -24,7 +24,7 @@ const StyledHeader = styled.header`
   z-index: 2;
 `
 
-const StyledEnterApp = styled(Link)`
+const StyledLink = styled(Link)`
   //box-sizing: border-box;
 
   /* Auto layout */
@@ -115,15 +115,6 @@ const Header = () => {
 
                     <div>
                         <div className="hidden lg:flex items-center gap-8">
-                            <div
-                                className="flex items-center gap-2 text-white border border-zinc-300 rounded-lg py-1 p-2">
-                                <AiFillCalendar/>
-
-                                <span>3.735</span>
-
-                                <AiOutlineRise className="text-green-500"/>
-                            </div>
-
                             <div>
                                 <Listbox value={selected} onChange={setSelected}>
                                     <div className="relative mt-1">
@@ -184,9 +175,13 @@ const Header = () => {
                                 </Listbox>
                             </div>
 
-                            <StyledEnterApp href={'/voting'} className="hover:opacity-50 ease-linear duration-150">
+                            <StyledLink href={'/personal-info'} className="hover:opacity-50 ease-linear duration-150">
+                                Personal Information
+                            </StyledLink>
+
+                            <StyledLink href={'/voting'} className="hover:opacity-50 ease-linear duration-150">
                                 Enter App
-                            </StyledEnterApp>
+                            </StyledLink>
                         </div>
 
                         <div className="lg:hidden block text-white text-xl">
@@ -229,16 +224,7 @@ const Header = () => {
                         </button>
                     </div>
 
-                    <div className="mt-12 flex items-center justify-around gap-8">
-                        <div
-                            className="flex items-center gap-2 text-white border border-zinc-300 rounded-lg py-1 p-2">
-                            <AiFillCalendar/>
-
-                            <span>3.735</span>
-
-                            <AiOutlineRise className="text-green-500"/>
-                        </div>
-
+                    <div className="mt-12 flex items-center gap-8">
                         <LanguageMenu/>
                     </div>
                     <div className="mt-12 flow-root">
@@ -257,9 +243,14 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="mt-12 w-full">
-                        <StyledEnterApp href={'/voting'}>
+                        <StyledLink href={'/personal-info'}>
+                            Personal Information
+                        </StyledLink>
+                    </div>
+                    <div className="mt-4 w-full">
+                        <StyledLink href={'/voting'}>
                             Enter App
-                        </StyledEnterApp>
+                        </StyledLink>
                     </div>
                 </StyledDialogPanel>
             </Dialog>

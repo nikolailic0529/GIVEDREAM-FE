@@ -73,12 +73,12 @@ const StyledTable = styled.div`
 
 const stats = [
     {
-        title: "Ton amount",
-        value: "549,326,121",
+        title: "Number of registered participants",
+        value: "1 549 326",
     },
     {
-        title: "~BTC",
-        value: "44,455.57",
+        title: "Equivalent btc",
+        value: "15 493",
     },
     {
         title: "Received to DAO",
@@ -151,8 +151,7 @@ const StatsSection = ()=>{
                             <h1 className="uppercase text-5xl">STATISTICS</h1>
 
                             <p className="text-secondary-text ">
-                                Ton Statistics offers insights into the Ton ecosystem&#39;s
-                                performance, usage, and growth across various sectors.
+                                All data on the system operation comes from the bsc blockchain
                             </p>
                         </div>
 
@@ -284,11 +283,10 @@ const StatsSection = ()=>{
 
                             <div className="flex flex-col mt-10">
                                 <div className="flex flex-col gap-6 text-center mb-16">
-                                    <h1 className="uppercase text-4xl">DONATE</h1>
+                                    <h1 className="uppercase text-4xl">Donation</h1>
 
                                     <p className="text-2xl">
-                                        You can transfer any amount of Ton to the Aid Pool
-                                        without limitations.
+                                        You can donate any amount of tokens and stablecoins without limits to help.
                                     </p>
 
                                     <p className="text-secondary-text">
@@ -367,8 +365,8 @@ const StatsSection = ()=>{
                                         </StyledCard>
 
                                         <StyledCard className=" p-4">
-                                            <p className="hover:opacity-50 ease-linear duration-150">
-                                                info@dao-dream.com
+                                            <p className="hover:opacity-50 ease-linear duration-150 text-center">
+                                                info@givedream.io
                                             </p>
                                         </StyledCard>
                                     </div>

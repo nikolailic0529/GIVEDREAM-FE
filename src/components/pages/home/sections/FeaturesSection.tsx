@@ -2,21 +2,21 @@ import {StyledCard, StyledCardText} from "@/src/components/features/Card";
 
 const cards = [
     {
-        title: "Sustainable Growth",
-        text: "Invest in Jettons and NFT Dreams that prioritize sustainable growth and perpetual returns.",
+        title: "Compound interest",
+        text: "Sending of the surpluses 10% accumulated in the system is provided, as well as refinancing 50% of the profits from farming and staking, which will provide rewards on compound interest",
     },
 
     {
-        title: "Attractive returns",
-        text: "Get a higher return on your investment with attractive annual percentage yields (APYs).",
+        title: "Account protection",
+        text: "The smart contract code is open, no one can make changes to the code, the system works autonomously and transparently, there are no hidden fees and blackdoors",
     },
     {
-        title: "Auto Reinvesting",
-        text: "Boost your investments with auto reinvestment of earnings, which provides compound interest income.",
+        title: "Growth of rewards",
+        text: "By making contributions to the system from 0.01 to 5242.88 bnb, you get a place in the bsc blockchain and the smart contract gives you rewards of more than 25 000 bnb when you automatically fill in the binary structure below",
     },
     {
-        title: "Reset protection",
-        text: "All investments are protected by a smart contract; no one can make changes to the code. Connect to the blockchain using Web3 technology.",
+        title: "Additional rewards",
+        text: "Get additional rewards in btcb wrapped bitcoin due to the annual percentage return from farming and staking on different blockchains, where are all the liquidity received on the first account sent to",
     },
 ];
 

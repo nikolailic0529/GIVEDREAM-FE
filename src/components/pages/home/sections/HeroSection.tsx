@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "@/src/components/common/Link";
 
 export const StyledHeroSection = styled.section`
   /* hero */
@@ -30,24 +31,27 @@ export const StyleImage = styled.img`
     width: 450px;
   }
 `
+
 const HeroSection = ()=>{
     return (
         <StyledHeroSection className="pt-24">
             <div className="container mx-auto">
-                <div className="mt-12 flex flex-col gap-10">
+                <div className="mt-0 md:mt-8 flex flex-col">
                     <div className="text-center lg:text-5xl text-3xl font-medium">
-                        Decentralized autonomous organization
-                        with a protocol to automatically place liquidity into stacking and farming in the DeFi sector on blockchains
-                        The Open Network, Ethereum, Binance Smart Chain, Polygon, Arbitrum and other networks with rewards in Ton
+                        International decentralized autonomous system of mutual assistance on the Binance Smart Chain blockchain
                     </div>
-                    <h1 className="text-center lg:text-5xl text-3xl font-medium">
-                        DAO DREAM
-                    </h1>
 
-                    <StyleImage src="/images/bird.png" alt="" className="mx-auto" width={390} height={307} />
+                    <div className="mt-10 text-center lg:text-5xl text-3xl font-medium">
+                        GIVEDREAM
+                    </div>
+
+                    <StyleImage src="/images/bird.png" alt="" className="mt-4 mx-auto" width={390} height={307} />
+
+                    <p className="mt-10 text-xl font-normal md:w-7/12 w-full mx-auto">
+                        Community members connect one after another through a smart contract to endless global lines and automatically receive rewards
+                    </p>
 
                     <p className="text-xl font-normal md:w-5/12 w-full mx-auto mt-4">
-                        Essentially, by purchasing and holding Jettons and NFT Dreams, you get an endless, passive, reliable and manageable income
                     </p>
                 </div>
             </div>

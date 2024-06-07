@@ -34,15 +34,15 @@ const HeroSection = ()=>{
     return (
         <StyledHeroSection className="pt-24">
             <div className="container mx-auto">
-                <div className="mt-12 flex flex-col gap-10 text-center lg:text-5xl text-3xl font-medium">
-                    <div className="gap-10 w-full ">
-                        <h2>
-                            Decentralized autonomous organization
-                            with a protocol to automatically place liquidity into stacking and farming in the DeFi sector on blockchains
-                            The Open Network, Ethereum, Binance Smart Chain, Polygon, Arbitrum and other networks with rewards in Ton
-                        </h2>
-                        <h1>DAO DREAM</h1>
+                <div className="mt-12 flex flex-col gap-10">
+                    <div className="text-center lg:text-5xl text-3xl font-medium">
+                        Decentralized autonomous organization
+                        with a protocol to automatically place liquidity into stacking and farming in the DeFi sector on blockchains
+                        The Open Network, Ethereum, Binance Smart Chain, Polygon, Arbitrum and other networks with rewards in Ton
                     </div>
+                    <h1 className="text-center lg:text-5xl text-3xl font-medium">
+                        DAO DREAM
+                    </h1>
 
                     <StyleImage src="/images/bird.png" alt="" className="mx-auto" width={390} height={307} />
 

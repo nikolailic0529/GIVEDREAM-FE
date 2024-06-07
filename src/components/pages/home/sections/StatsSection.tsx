@@ -271,9 +271,9 @@ const StatsSection = ()=>{
                                             <tbody>
                                             {Array.from([1, 2, 3, 4, 5, 6]).map((_, index) => (
                                                 <tr key={index}>
-                                                    <td>1</td>
+                                                    <td>{index + 1}</td>
                                                     <td>100</td>
-                                                    <td>1</td>
+                                                    <td>{Math.pow(10, index)}</td>
                                                 </tr>
                                             ))}
                                             </tbody>

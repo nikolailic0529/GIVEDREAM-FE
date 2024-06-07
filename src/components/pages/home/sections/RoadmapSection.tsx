@@ -166,7 +166,7 @@ const RoadmapSection = ()=>{
                                 Connecting analytics and artificial intelligence
                             </div>
 
-                            <div className="home__roadmap__col">More to come</div>
+                            <div className="home__roadmap__col">Layer 2</div>
                         </div>
                     </div>
                 </div>

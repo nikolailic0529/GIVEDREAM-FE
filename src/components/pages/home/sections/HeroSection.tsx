@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link} from "@/src/components/common/Link";
+import  {ConnectWallet, MobileConnectWallet} from "@/src/components/pages/voting/ConnectWallet";
 
 export const StyledHeroSection = styled.section`
   /* hero */
@@ -47,9 +48,17 @@ const HeroSection = ()=>{
 
                     <StyleImage src="/images/bird.png" alt="" className="mt-4 mx-auto" width={390} height={307} />
 
-                    <p className="mt-10 text-xl font-normal md:w-7/12 w-full mx-auto">
+                    <div className="mt-10 text-xl font-normal md:w-7/12 w-full mx-auto">
                         Community members connect one after another through a smart contract to endless global lines and automatically receive rewards
-                    </p>
+                    </div>
+
+                    <div className="mt-5 hidden md:block w-5/12 mx-auto">
+                        <ConnectWallet />
+                    </div>
+                    
+                    <div className="md:hidden">
+                        <MobileConnectWallet />
+                    </div>
 
                     <p className="text-xl font-normal md:w-5/12 w-full mx-auto mt-4">
                     </p>

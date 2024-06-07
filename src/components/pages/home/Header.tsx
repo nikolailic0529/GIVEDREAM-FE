@@ -72,8 +72,8 @@ const navItems = [
         path: "/about",
     },
     {
-        name: "Documents",
-        path: "/documents",
+        name: "Smart-contract",
+        path: "/smart-contract",
     },
     {
         name: "Audit",
@@ -178,10 +178,6 @@ const Header = () => {
                             <StyledLink href={'/personal-info'} className="hover:opacity-50 ease-linear duration-150">
                                 Personal Information
                             </StyledLink>
-
-                            <StyledLink href={'/voting'} className="hover:opacity-50 ease-linear duration-150">
-                                Enter App
-                            </StyledLink>
                         </div>
 
                         <div className="lg:hidden block text-white text-xl">
@@ -248,9 +244,6 @@ const Header = () => {
                         </StyledLink>
                     </div>
                     <div className="mt-4 w-full">
-                        <StyledLink href={'/voting'}>
-                            Enter App
-                        </StyledLink>
                     </div>
                 </StyledDialogPanel>
             </Dialog>

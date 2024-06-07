@@ -7,7 +7,6 @@ import {
 } from "react-icons/ai";
 import {CgMenu, CgClose} from "react-icons/cg";
 import {Link} from "@/src/components/common/Link";
-import  {ConnectWallet, MobileConnectWallet} from "@/src/components/pages/voting/ConnectWallet";
 import LanguageMenu from "@/src/components/features/LanguageMenu";
 
 
@@ -29,8 +28,8 @@ const navItems = [
         path: "/about",
     },
     {
-        name: "Documents",
-        path: "/documents",
+        name: "Smart-contact",
+        path: "/smart-contract",
     },
     {
         name: "Audit",
@@ -81,18 +80,7 @@ const Header = () => {
 
                     <div>
                         <div className="hidden lg:flex items-center gap-8">
-                            <div
-                                className="flex items-center gap-2 text-white border border-zinc-300 rounded-lg py-1 p-2">
-                                <AiFillCalendar/>
-
-                                <span>3.735</span>
-
-                                <AiOutlineRise className="text-green-500"/>
-                            </div>
-
                             <LanguageMenu/>
-
-                            <ConnectWallet />
                         </div>
 
                         <div className="lg:hidden block text-white text-xl">
@@ -136,15 +124,6 @@ const Header = () => {
                     </div>
 
                     <div className="mt-12 flex items-center justify-around gap-8">
-                        <div
-                            className="flex items-center gap-2 text-white border border-zinc-300 rounded-lg py-1 p-2">
-                            <AiFillCalendar/>
-
-                            <span>3.735</span>
-
-                            <AiOutlineRise className="text-green-500"/>
-                        </div>
-
                         <LanguageMenu/>
                     </div>
                     <div className="mt-12 flow-root">
@@ -162,7 +141,6 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                    <MobileConnectWallet />
 
                 </StyledDialogPanel>
             </Dialog>

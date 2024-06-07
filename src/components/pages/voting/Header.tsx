@@ -29,15 +29,15 @@ const navItems = [
     },
     {
         name: "Smart-contact",
-        path: "/smart-contract",
+        path: "/voting",
     },
     {
         name: "Audit",
-        path: "/audit",
+        path: "/about",
     },
     {
         name: "Instructions",
-        dropdown: true,
+        path: "/voting",
     },
 ];
 
@@ -59,7 +59,8 @@ const Header = () => {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-12">
                         <Link href="/" className="hover:opacity-50 ease-linear duration-150">
-                            <img src='/images/logo.svg' alt=""/>
+                            {/* <img src='/images/logo.svg' alt=""/> */}
+                            GIVEDREAM
                         </Link>
 
                         <nav className="lg:block hidden">
@@ -111,7 +112,8 @@ const Header = () => {
                             className="hover:opacity-50 ease-linear duration-150"
                         >
                             <span className="sr-only">Your Company</span>
-                            <img src="/images/logo.svg" alt="" />
+                            {/* <img src="/images/logo.svg" alt="" /> */}
+                            GIVEDREAM
                         </Link>
                         <button
                             type="button"

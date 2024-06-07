@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import {Link} from "@/src/components/common/Link";
+import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import  {ConnectWallet, MobileConnectWallet} from "@/src/components/pages/voting/ConnectWallet";
+
+const manifestUrl = 'https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json';
 
 export const StyledHeroSection = styled.section`
   /* hero */
@@ -53,11 +56,15 @@ const HeroSection = ()=>{
                     </div>
 
                     <div className="mt-5 hidden md:block w-5/12 mx-auto">
-                        <ConnectWallet />
+                        <TonConnectUIProvider manifestUrl={manifestUrl}>
+                            <ConnectWallet />
+                        </TonConnectUIProvider>
                     </div>
                     
                     <div className="md:hidden">
-                        <MobileConnectWallet />
+                        <TonConnectUIProvider manifestUrl={manifestUrl}>
+                            <MobileConnectWallet />
+                        </TonConnectUIProvider>
                     </div>
 
                     <p className="text-xl font-normal md:w-5/12 w-full mx-auto mt-4">

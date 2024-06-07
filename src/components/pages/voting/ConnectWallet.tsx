@@ -1,6 +1,9 @@
 import { Popover, Transition,Disclosure } from '@headlessui/react'
-import { Fragment } from 'react'
+import { Fragment } from 'react';
 import styled from "styled-components";
+import ConnectButton from './ConnectButton';
+import { useTonConnectUI } from "@tonconnect/ui-react";
+
 
 
 const StyledCollectWallet = styled.button`
@@ -98,120 +101,31 @@ const StyledWallet = styled.a`/* item */
   }
   
 `
-
-const solutions = [
-    {
-        name: 'Tonkeeper',
-        href: '##',
-        icon: IconOne,
-    },
-    {
-        name: 'OpenMask',
-        href: '##',
-        icon: IconTwo,
-    },
-    {
-        name: 'MyTonWallet',
-        href: '##',
-        icon: IconThree,
-    },
-    {
-        name: 'Tonhub',
-        href: '##',
-        icon: IconThree,
-    },
-    {
-        name: 'TonWallet',
-        href: '##',
-        icon: IconThree,
-    },
-]
-
 export const MobileConnectWallet = ()=>{
     return (
-            <Disclosure as="div" className="w-full">
-                {({ open }) => (
-                    <>
-                        <div className="mt-12 w-full">
-                            <Disclosure.Button as={StyledCollectWallet} className="w-full">
-                                Connect wallet
-                            </Disclosure.Button>
-                        </div>
-                        <Disclosure.Panel className="mt-2 space-y-2">
-                            <div className="relative grid gap-8 p-7 grid-cols-2">
-                                {solutions.map((item) => (
-                                    <StyledWallet
-                                        key={item.name}
-                                        href={item.href}
-                                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out  focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                    >
-                                        <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 mb-2">
-                                            <item.icon aria-hidden="true" />
-                                        </div>
-                                        <div className="mt-2">
-                                            <p className="text-sm font-medium">
-                                                {item.name}
-                                            </p>
-                                        </div>
-                                    </StyledWallet>
-                                ))}
-                            </div>
-                        </Disclosure.Panel>
-                    </>
-                )}
-            </Disclosure>
+        <Disclosure as="div" className="w-full">
+            {({ open }) => (
+                <>
+                    <div className="mt-12 w-full">
+                        <Disclosure.Button as={StyledCollectWallet} className="w-full">
+                            <ConnectButton text = {'Connect wallet'} />
+                        </Disclosure.Button>
+                    </div>
+                </>
+            )}
+        </Disclosure>
     )
 }
 
 export function ConnectWallet() {
     return (
-        <Popover className="relative">
-            {({ open }) => (
-                <>
-                    <div className="flex justify-center">
-
-                        <Popover.Button as={StyledCollectWallet}
-                                        className={`
-                ${open ? 'w-full' : 'w-full text-opacity-90'}`}
-                        >
-                            <span>Connect wallet</span>
-                        </Popover.Button>
-                    </div>
-                    <Transition
-                        as={Fragment}
-                        enter="transition ease-out duration-200"
-                        enterFrom="opacity-0 translate-y-1"
-                        enterTo="opacity-100 translate-y-0"
-                        leave="transition ease-in duration-150"
-                        leaveFrom="opacity-100 translate-y-0"
-                        leaveTo="opacity-0 translate-y-1"
-                    >
-                        <Popover.Panel style={{left: '14rem'}} className="relative z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 max-w-l">
-                            <StyledPaneElement className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                                <div className="relative grid gap-8 p-7 lg:grid-cols-2">
-                                    {solutions.map((item) => (
-                                        <StyledWallet
-                                            key={item.name}
-                                            href={item.href}
-                                            className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out  focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                        >
-                                            <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                                <item.icon width={32} height={32} aria-hidden="true" />
-                                            </div>
-                                            <div>
-                                                <p className="text-sm font-medium">
-                                                    {item.name}
-                                                </p>
-                                            </div>
-                                        </StyledWallet>
-                                    ))}
-                                </div>
-                            </StyledPaneElement>
-                        </Popover.Panel>
-                    </Transition>
-                </>
-            )}
-        </Popover>
+        <div className="flex justify-center">
+            <Disclosure>
+                <Disclosure.Button  as={StyledCollectWallet} className="w-full">
+                    <ConnectButton text = {'Connect wallet'}></ConnectButton> 
+                </Disclosure.Button>
+            </Disclosure>
+        </div>
 
     )
 }

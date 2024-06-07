@@ -204,11 +204,11 @@ const Voting2 = () => {
 
             <Header/>
             <div className="pt-24">
-                <StyledHeading className="container flex justify-between">
+                {/* <StyledHeading className="container flex justify-between">
                     <h2>
                         dApp
                     </h2>
-                </StyledHeading>
+                </StyledHeading> */}
                 <Tab.Group defaultIndex={0}>
                     <div className="mt-10 mb-4 p-0 border-b border-gray-200 dark:border-gray-700">
                         <div className="container ">

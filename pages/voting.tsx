@@ -232,12 +232,12 @@ const Voting = () => {
 
             <Header/>
             <div className="pt-24">
-                <StyledHeading className="container flex justify-between">
+                {/* <StyledHeading className="container flex justify-between">
                     <h2>
                         dApp
                     </h2>
                     <StyledFlyBird className={birdHidden ? 'fly-bird-hidden' : ''} src="/images/bird.png"/>
-                </StyledHeading>
+                </StyledHeading> */}
                 <Tab.Group defaultIndex={0}>
                     <div className="mt-10 mb-4 p-0 border-b border-gray-200 dark:border-gray-700">
                         <div className="container ">
@@ -379,7 +379,7 @@ const Voting = () => {
                                         
                                         {!open && (
                                             <p className="indent-5">
-                                            DAO Dream Tokenomics is designed to last for years to come
+                                            GIVEDREAM Tokenomics is designed to last for years to come
                                             </p>
                                          )}
 
@@ -388,7 +388,7 @@ const Voting = () => {
                                     <>
                                         {open && (
                                         <p className="indent-5">
-                                            DAO Dream Tokenomics is designed to last for years to come, a
+                                            GIVEDREAM Tokenomics is designed to last for years to come, a
                                             total of 21 billion jettons and 1 thousand NFTs will be issued.
                                             In circulation - 10 billion jettons. Internal Stacking - 10
                                             billion jettons per 1,000 years on a sinusoidal trajectory.
@@ -406,7 +406,7 @@ const Voting = () => {
                                     {/* 
                                     <Disclosure.Panel>
                                     <p className="indent-5">
-                                        DAO Dream Tokenomics is designed to last for years to come, a
+                                        GIVEDREAM Tokenomics is designed to last for years to come, a
                                         total of 21 billion jettons and 1 thousand NFTs will be issued.
                                         In circulation - 10 billion jettons. Internal Stacking - 10
                                         billion jettons per 1,000 years on a sinusoidal trajectory.
@@ -429,12 +429,12 @@ const Voting = () => {
                                                     </p> */}
 
                                                     {/* <p className="indent-5">
-                                                        DAO Dream Tokenomics is designed to last for years to come
+                                                        GIVEDREAM Tokenomics is designed to last for years to come
                                                     </p>
                                                     
                                                     <Disclosure.Panel>
 
-                                                        <p className="indent-5">DAO Dream Tokenomics is designed to last for years to come, a total of 21 billion jettons and 1 thousand
+                                                        <p className="indent-5">GIVEDREAM Tokenomics is designed to last for years to come, a total of 21 billion jettons and 1 thousand
                                                             NFTs will be issued. In circulation - 10 billion jettons.
                                                             Internal Stacking - 10 billion jettons per 1,000 years on a
                                                             sinusoidal trajectory. Airdrop and presale - 1 billion
@@ -724,7 +724,7 @@ const Voting = () => {
                                     <div className="p-8">
                                         <div className="flex items-center justify-between flex-wrap gap-2 mb-4">
                                             <p className="font-medium">
-                                                Stacking of Dream jettons
+                                                Staking of Dream jettons
                                             </p>
                                             <ContainerDropdown choices={dayChoices}/>
                                         </div>

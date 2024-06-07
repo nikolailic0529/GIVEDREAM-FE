@@ -73,15 +73,15 @@ const navItems = [
     },
     {
         name: "Smart-contract",
-        path: "/smart-contract",
+        path: "/voting",
     },
     {
         name: "Audit",
-        path: "/audit",
+        path: "/about",
     },
     {
         name: "Instructions",
-        path:"/Instructions",
+        path:"/voting",
     },
 ];
 

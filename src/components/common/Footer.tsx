@@ -131,7 +131,7 @@ export default function Footer() {
         <StyledFooter className="bottom-0 w-full bg-darkest-blue py-16">
             <div className="container">
 
-                <p>dao-dream.com</p>
+                {/* <p>dao-dream.com</p> */}
 
                 <StyledSocials className="mt-10">
                     {socials.map((item, index) => (

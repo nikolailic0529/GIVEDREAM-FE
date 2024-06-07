@@ -59,8 +59,8 @@ const BlocksSection = ()=>{
                     <p className="text-2xl">-100,000%</p>
 
                     <p className="text-secondary-text">
-                        Here at DAO Dream, we want to...
-                        Here at DAO Dream, we want to...{" "}
+                        Here at GIVEDREAM, we want to...
+                        Here at GIVEDREAM, we want to...{" "}
                     </p>
 
                     <LearnMoreButton />
